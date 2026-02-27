@@ -1,0 +1,252 @@
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  main {
+    margin-top: 50px;
+    position: relative;
+    padding-top: 2px;
+    height: 250vh;
+    background-color: rgb(29, 26, 26);
+    color: white;
+    z-index: 1;
+  }
+
+  .header {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 90px;
+    z-index: 2;
+  }
+
+  .hl {
+    color: rgb(110 208 222);
+  }
+
+  .hli {
+    color: rgb(255, 255, 0);
+  }
+
+  footer {
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: sticky;
+    z-index: 3;
+  }
+
+  .text {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    bottom: 40px;
+    font-size: 40px;
+    z-index: 3;
+  }
+
+  .text2 {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    bottom: 40px;
+    font-size: 45px;
+    z-index: 3;
+  }
+
+  .van {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 18%;
+    gap: 250px;
+    z-index: 4;
+  }
+
+  .ivan {
+    font-size: 40px;
+    z-index: 4;
+  }
+
+  .profpic {
+    margin-top: 9%;
+    width: 300px;
+    height: auto;
+  }
+
+  .vanimg {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin-left: 16.5%;
+    gap: 180px;
+    z-index: 4;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    z-index: -1;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border-radius: 30px;
+    background-color: black;
+    z-index: 3;
+  }
+  .navigasi {
+    position: fixed;   /* stays in place */
+    top: 0;            /* stick to top */
+    left: 0;
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  ul {
+    position: fixed;   /* stays in place */
+    top: 0;            /* stick to top */
+    left: 0;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    z-index: 2;
+  }
+
+  .para1 {
+    left: 0;
+    top: 200px;
+    width: 500px;
+    height: 300px;
+    background: cyan;
+    box-shadow: 15px 10px 50px -5px rgba(3, 112, 201);
+    clip-path: polygon(
+    0 0,       /* top-left */
+    0% 0,    /* top-right */
+    100% 200%,  /* almost bottom-right */
+    100% 250%,  /* inward slant toward bottom */
+    0 50%     /* bottom-left */
+    );
+    z-index: 1;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    animation: moveAndScale 1 linear both;
+    animation-timeline: scroll();
+  }
+
+  .para2 {
+    top : 500px;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    background: cyan;
+    box-shadow: 15px 10px 50px -5px rgba(3, 112, 201);
+    clip-path: polygon(
+    0 0,       /* top-left */
+    0% 0,    /* top-right */
+    100% 200%,  /* almost bottom-right */
+    100% 250%,  /* inward slant toward bottom */
+    0 50%     /* bottom-left */
+    );
+    position: fixed;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .para3 {
+    right: 0;
+    top: 200px;
+    width: 500px;
+    height: 300px;
+    background: cyan;
+    box-shadow: 15px 10px 50px -5px rgba(3, 112, 201);
+    clip-path: polygon(
+      100% 0,    /* mirror of 0 0 */
+      100% 0,    /* mirror of 0% 0 */
+      0% 200%,   /* mirror of 100% 200% */
+      0% 250%,   /* mirror of 100% 250% */
+      100% 50%   /* mirror of 0 50% */
+    );
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .para4 {
+    top: 500px;
+    right: 0;
+    width: 500px;
+    height: 300px;
+    background: cyan;
+    box-shadow: 15px 10px 50px -5px rgba(3, 112, 201);
+    clip-path: polygon(
+      100% 0,    /* mirror of 0 0 */
+      100% 0,    /* mirror of 0% 0 */
+      0% 200%,   /* mirror of 100% 200% */
+      0% 250%,   /* mirror of 100% 250% */
+      100% 50%   /* mirror of 0 50% */
+    );
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .para1:hover {
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    transform-origin: top;
+  }
+  .para2:hover {
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    transform-origin: top;
+  }
+  .para3:hover {
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    transform-origin: top;
+  }
+  .para4:hover {
+    background-color: blue;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    transform-origin: top;
+  }
+
+  .v-shape {
+    position: absolute;
+    top: 5%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%); /* perfectly center */
+    width: 1250px;          /* adjust size */
+    height: 900px;
+    background-color: rgb(3, 66, 255);
+    clip-path: polygon(
+      0 0,      /* top-left */
+      20% 0,    /* top thickness edge */
+      50% 60%,  /* center bottom point of V */
+      80% 0,    /* top thickness edge */
+      100% 0,   /* top-right */
+      50% 100%  /* bottom tip */
+    );
+    z-index: 0;
+  }

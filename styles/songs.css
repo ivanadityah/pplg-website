@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(110, 208, 222);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 88vh;
+    background-color: rgb(255, 240, 0);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+  }
+  footer {
+    height: 5vh;
+    background-color: rgb(29, 31, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    border-radius: 30px;
+  }
+  .navigasi {
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    text-decoration: none;
+  }
